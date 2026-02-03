@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "ai.rever.boss.plugin.dynamic"
-version = "1.0.1"
+version = "1.0.2"
 
 java {
     toolchain {
@@ -41,6 +41,9 @@ dependencies {
     implementation(compose.foundation)
     implementation(compose.material)
     implementation(compose.materialIconsExtended)
+
+    // Compose Icons (SimpleIcons)
+    implementation("br.com.devsrsouza.compose.icons:simple-icons:1.1.1")
     
     // Decompose for ComponentContext
     implementation("com.arkivanov.decompose:decompose:3.3.0")

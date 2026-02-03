@@ -4,12 +4,17 @@ import ai.rever.boss.plugin.api.Panel.Companion.right
 import ai.rever.boss.plugin.api.Panel.Companion.top
 import ai.rever.boss.plugin.api.PanelId
 import ai.rever.boss.plugin.api.PanelInfo
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.SmartToy
+import compose.icons.SimpleIcons
+import compose.icons.simpleicons.Openai
 
+/**
+ * Fluck/ChatGPT panel info
+ *
+ * Priority 15 = Position in right.top.top panel
+ */
 object FluckInfo : PanelInfo {
     override val id = PanelId("fluck", 15)
     override val displayName = "ChatGPT"
-    override val icon = Icons.Outlined.SmartToy
+    override val icon = SimpleIcons.Openai
     override val defaultSlotPosition = right.top.top
 }
